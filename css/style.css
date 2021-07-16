@@ -1,0 +1,164 @@
+@keyframes show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes playAnim{
+    from{
+        background-color: #ffe2e2;
+        border-color: rgb(255, 240, 253);
+        box-shadow: none;
+    }
+    to{
+        background-color: #ff5353;
+        border-color: rgb(255, 125, 233);
+        box-shadow: 0 0 6px plum;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #ee7d77;
+}
+.warpper{
+    height: 100%;
+    display: block;
+}
+#diana{
+    display: inline-block;
+    height: 100%;
+    animation: show 8s;
+    object-fit:fill;
+}
+.side{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    overflow: auto;
+}
+.title{
+    display: block;
+    font-size: 48px;
+    font-weight: 800;
+    color: rgb(253, 83, 106);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.song-item{
+    display: inline-block;
+    width: 25%;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+}
+.playing{
+    animation: playAnim 6s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.song-play-icon{
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+.song-name{
+    display: block;
+    font-size: 18px;
+    color: pink;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: aliceblue;
+}
+.baidu{
+    margin-top: 100px;
+    display: block;
+    font-size: 0;
+    text-align: center;
+}
+.foot{
+    text-align: center;
+}
+.icon{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    user-select: none;
+}
+.item{
+    cursor: pointer;
+}
+.item:hover{
+    box-shadow: 0px 0px 2px rgb(255, 35, 90);
+    background-color: rgb(220, 0, 118);
+}
+.item:focus{
+    box-shadow: 0px 0px 6px rgb(255, 35, 90);
+    background-color: rgb(255, 0, 118);
+}
+.baidu-button{
+    color: aliceblue;
+    width: 75px;
+    height: 42px;
+    border-style: solid;
+    border-width: 3px;
+    vertical-align: top;
+    box-sizing:content-box;
+    background-color:transparent;
+    user-select: none;
+}
+.baidu-input{
+    color: aliceblue;
+    outline: none;
+    width: 75%;
+    height: 42px;
+    font-size: 32px;
+    border-style: solid;
+    border-width: 3px;
+    border-right: none;
+    background-color:transparent;
+}
+.baidu-input:hover{
+    box-shadow: 0px 0px 4px purple;
+}
+.baidu-input:focus{
+    box-shadow: 0px 0px 8px purple;
+}
+#announce{
+    display: block;
+    font-size: 0;
+    text-align: center;
+}
+#announce-video{
+    margin-top: 100px;
+    display: inline;
+    width: 380px;
+    cursor: pointer;
+}
+.select-btn{
+    display: inline-block;
+    width: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+}
+#time{
+    font-size: 36px;
+    font-weight: 800;
+    color: aliceblue;
+    position: fixed;
+    width: 300px;
+    bottom: 40px;
+    display: block;
+}
