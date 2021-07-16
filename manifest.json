@@ -1,0 +1,34 @@
+{
+    "name":"圣嘉然",
+    "description":"我们都如羊走迷\n各人偏行己路\n圣嘉然使我们众人的罪孽都归在她身上\n\t嘉门\n",
+    "version":"0.0.1",
+    "manifest_version":2,
+    "icons":{
+        "16":"/res/image/icon.png",
+        "48":"/res/image/icon.png",
+        "128":"/res/image/icon.png"
+    },
+    "browser_action":{
+        "default_icon":"/res/image/icon.png",
+        "default_popup":"popup.html",
+        "default_title":"关注嘉然，顿顿解馋！"
+    },
+    "web_accessible_resources": ["/res/image/cursor.ico"],
+    "content_scripts":[{
+        "matches": ["<all_urls>"],
+        "js": ["/js/global.js"],
+        "run_at": "document_end",
+        "all_frames":true
+    }],
+    "permissions":[
+        "storage"
+    ],
+	"options_ui":{
+    	"page": "popup.html",
+    	"chrome_style": true
+	},
+    "homepage_url": "https://space.bilibili.com/672328094/",
+    "chrome_url_overrides":{
+        "newtab":"page.html"
+    }
+}
